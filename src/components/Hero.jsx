@@ -17,7 +17,7 @@ const Hero = () => {
             Hi, I'm <br className="max-lg:block hidden" />{" "}
             <span className="text-[#915eff]">Kartik Agrawal</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-secondary`}>
             I'm a React Developer, I love to build web applications.
           </p>
         </div>
@@ -41,6 +41,6 @@ const Hero = () => {
       </div>
     </section>
   );
-};  
+};
 
 export default Hero;
