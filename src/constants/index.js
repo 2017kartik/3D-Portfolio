@@ -121,10 +121,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "October 2024 - November 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed modular, responsive user interfaces using React and Tailwind CSS, ensuring scalability and cross-device compatibility.",
+      "Implemented dynamic state management and API integrations with React hooks, enabling real-time data synchronization and seamless user interactions.",
+      "Streamlined workflows by creating reusable custom hooks and components, enhancing code efficiency and maintainability.",
+      "Collaborated with the backend team to integrate APIs and debug complex issues, ensuring a stable and high-performing application.",
     ],
   },
   {
@@ -147,10 +147,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2024 - April 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed an intuitive and responsive user interface using HTML, CSS, and JavaScript, ensuring accessibility and seamless navigation for the Employee Attendance Tracking System.",
+      "Collaborated with team members during the hackathon to translate project requirements into functional front-end features under tight deadlines",
+      "Developed cross-browser-compatible UI components and optimized layouts to enhance user experience and application performance.",
+      "Contributed innovative design solutions and resolved UI challenges effectively, demonstrating adaptability and teamwork in a high-pressure environment.",
     ],
   },
 ];
@@ -158,7 +158,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "It was impossible to make a website as beautiful as our product, but Kartik proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -166,7 +166,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Kartik does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -174,7 +174,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Kartik optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -184,16 +184,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Health Guardian",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "HealthGuardian is a health management system designed to empower users to track their health proactively. Through an AI-driven platform, users receive personalized insights and early risk assessments, enabling better preventive care and management.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
@@ -202,36 +202,36 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/InternLay-HG/Data_Doctors",
   },
   {
-    name: "Job IT",
+    name: "The World Wise",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The World Wise App demonstrates my expertise in React by implementing state management with hooks, custom hooks for reusability, and responsive design with Tailwind CSS. It features efficient navigation, real-time data handling, and optimized performance for a seamless user experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/2017kartik/The-World-Wise-App",
   },
   {
-    name: "Trip Guide",
+    name: "React Quiz",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The React Quiz highlights my proficiency in React through dynamic state management, custom hooks, and an intuitive component-based structure. With responsive design and seamless navigation, the app ensures an engaging quiz experience with real-time feedback and efficient performance.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
@@ -239,12 +239,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/2017kartik/The-React-Quiz",
   },
 ];
 

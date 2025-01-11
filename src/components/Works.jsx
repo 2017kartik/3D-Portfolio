@@ -5,7 +5,6 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { p } from "framer-motion/client";
 
 const ProjectCard = ({
   index,
@@ -21,11 +20,11 @@ const ProjectCard = ({
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[200px]">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-fill rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div

@@ -6,10 +6,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-// zpqZXtIhBCcLS-ZVT
-// template_qez91oc
-// service_nmckv6p
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -21,9 +17,11 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { target } = e;
+    const { name, value } = target;
     setForm({ ...form, [name]: value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -40,14 +38,27 @@ const Contact = () => {
         },
         "zpqZXtIhBCcLS-ZVT"
       )
-      .then(() => {
-        setLoading(false);
-      });
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
     <div
-      className={`xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden`}
+      className={`xl:mt-12 xl:flex-row font-poppins flex-col-reverse flex gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -68,7 +79,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="What's your good name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -79,19 +90,19 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder="What's your web address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="mb-4 font-medium text-white">Your Message</span>
-            <input
-              rows={7}
+            <textarea
+              rows={4}
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary overflow-hidden py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <button
