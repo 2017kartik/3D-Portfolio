@@ -1,8 +1,54 @@
-# React + Vite
+# 3D Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a 3D portfolio website built using React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **3D Graphics**: Utilizes WebGL for interactive 3D elements.
+- **Responsive Design**: Ensures compatibility across various devices and screen sizes.
+- **Modern UI**: Features a sleek and user-friendly interface.
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/2017kartik/3D-Portfolio.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd 3D-Portfolio
+Install dependencies:
+
+bash
+Copy code
+npm install
+Start the development server:
+
+bash
+Copy code
+npm run dev
+The application will be accessible at http://localhost:3000.
+
+Usage
+After setting up, you can explore and customize the portfolio by modifying the components in the src directory.
+
+Contributing
+Contributions are welcome!
+
+Fork the repository.
+Create a new branch:
+bash
+Copy code
+git checkout -b feature-name
+Make your changes and commit them:
+bash
+Copy code
+git commit -m 'Add feature'
+Push to the branch:
+bash
+Copy code
+git push origin feature-name
+Submit a pull request.
