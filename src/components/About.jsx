@@ -13,11 +13,13 @@ const ServiceCard = ({ index, title, icon }) => {
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
-          option={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-tertiary rounded-[20px] py-5 px-8 min-h-[280px] flex justify-evenly items-center flex-col"
+          options={{ max: 45, scale: 1, speed: 450 }}
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px]">{title}</h3>
+          <img src={icon} alt='web-development' className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -33,7 +35,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17xl] max-w-3xl leading-[30px] tracking-wide"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] tracking-wide"
       >
         I'm skilled software developer with experience in JavaScript and
         expertise in frameworks like React.js, Node.js and Three.js. I'm a quick
