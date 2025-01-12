@@ -17,4 +17,4 @@ This project is a 3D portfolio website built using React and Vite.
 
 ## Demo
 
-Check out the live demo of the project: [Live Demo](https://your-live-demo-link.com)
+Check out the live demo of the project: [Live Demo](https://3d-portfolio-tau-peach.vercel.app/)
